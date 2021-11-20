@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SliderActivity">
+
+    <com.santalu.aspectratioimageview.AspectRatioImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back"
+        android:scaleType="centerCrop"
+        app:ari_ratio="1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="@dimen/_90sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/floatingBtn"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="24dp"
+        android:elevation="@dimen/_5sdp"
+        android:translationZ="@dimen/_90sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_slider"
+        app:layout_constraintStart_toStartOf="@+id/image_slider"
+        app:layout_constraintTop_toBottomOf="@+id/image_slider"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="download_anim.json"
+        app:lottie_loop="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/cardColor"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/image_slider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/photographerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:translationZ="@dimen/_90sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

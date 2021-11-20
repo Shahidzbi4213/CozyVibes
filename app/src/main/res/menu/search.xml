@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:iconTint="@color/txtColor"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom"
+        tools:ignore="UnusedAttribute" />
+
+
+    <item
+        android:icon="@drawable/ic_more_vert"
+        android:title="@string/app_name"
+        app:iconTint="@color/txtColor"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_update"
+                android:title="@string/check_updates"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/feedBack"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/feedback"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/nav_more"
+                android:icon="@drawable/ic_more"
+                android:title="@string/more_from_iqbal_techs"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share"
+                app:showAsAction="ifRoom" />
+        </menu>
+
+    </item>
+</menu>

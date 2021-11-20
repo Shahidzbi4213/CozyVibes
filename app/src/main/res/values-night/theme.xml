@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MildVideos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/cardColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/txtColor</item>
+        <item name="colorSecondaryVariant">@color/purple_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/cardColor</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

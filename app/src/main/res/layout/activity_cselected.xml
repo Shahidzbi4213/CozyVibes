@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".ui.CSelectedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/csToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/cardColor">
+
+        <TextView
+            android:id="@+id/tvCName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/roboto_slab"
+            android:textColor="@color/txtColor"
+            android:textSize="@dimen/_16sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectedViewer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/cardColor"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

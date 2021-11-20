@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cozy Vibes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="categories">Categories</string>
+    <string name="popular">Popular</string>
+    <string name="videoThumb">videoThumbnail</string>
+    <string name="back">back</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="more_from_iqbal_techs">More from Iqbal Techs</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_developer">About Developer</string>
+    <string name="check_updates">Check Updates</string>
+    <string name="feedback">Feedback</string>
+</resources>

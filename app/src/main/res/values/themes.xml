@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MildVideos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/cardColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_200</item>
+        <item name="colorSecondaryVariant">@color/purple_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/cardColor</item>
+        <!-- Customize your theme here. -->
+        <item name="tabTextAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+        <item name="android:textColorHint">@color/txtColor</item>
+        <item name="hintTextColor">@color/txtColor</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+        <item name="iconTint">@color/bgColor</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="errorTextColor">@android:color/holo_red_light</item>
+        <item name="errorEnabled">true</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="fontFamily">@font/roboto_slab</item>
+        <item name="android:fontFamily">@font/roboto_slab</item>
+        <item name="android:textColorHint">@color/txtColor</item>
+        <item name="boxStrokeWidthFocused">@dimen/_1sdp</item>
+        <item name="hintTextColor">@color/txtColor</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/txtColor</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterTextColor">@color/txtColor</item>
+        <item name="counterOverflowTextColor">@android:color/holo_red_light</item>
+
+    </style>
+
+    <style name="SliderTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.MildVideos.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>
