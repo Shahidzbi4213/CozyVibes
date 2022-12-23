@@ -119,7 +119,7 @@ public class PopularFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() {
                     Map<String, String> map = new HashMap<>();
-                    map.put("Authorization", "563492ad6f917000010000013c35869795db4034972b1408c54283c4");
+                    map.put("Authorization", "youApiKey");
                     return map;
                 }
             };
